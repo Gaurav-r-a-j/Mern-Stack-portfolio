@@ -3,3 +3,120 @@
     height: 100vh;
     max-width: 100%;
 }
+
+.homeContainer{
+    background-color:white ;
+    padding-top: 4vmax;
+    border-radius: 0 0 200px 200px;
+    border-bottom: 200px solid white;
+    position: relative;
+    z-index: 1;
+}
+
+.homeContainer > h3{
+    text-align: center;
+    color: rgba(22,20,20,0.903);
+    padding: 4vmax;
+}
+.homeSkill{
+    background-color: hsl(219, 48%, 8%);
+    position: relative;
+    height: 1500px;
+    padding: 200px;
+    box-sizing: border-box;
+    perspective: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+    transform: translateY(-200px);
+    margin-bottom: -200px;
+}
+
+.homeSkill > h3{
+    text-align: center;
+    color: white ;
+    margin-bottom: 4vmax;
+    font-size: 4vmax;
+}
+
+.homeCubeSkills{
+    width: 200px;
+    height: 200px;
+    /* transform: rotateY(20deg); */
+    animation: cubeRotation 15s linear infinite alternate;
+
+    /* we use transform-style: property to get 3d cube right now its flat; */
+    transform-style:preserve-3d ; 
+
+}
+
+.homeCubeSkillsFaces > img{
+    width: inherit;
+    height: inherit;
+
+}
+
+.homeCubeSkillsFaces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0,0,0);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+
+    opacity: 0.7;
+}
+
+.homeCubeSkillsFace1{
+    /* keep the third size half of the homecubeskill size to get all side attach and to remove it give it extra size  */
+    transform: translate3d(0,0,150px);
+}
+
+.homeCubeSkillsFace2{
+    transform:rotateY(180deg) translate3d(0,0,150px);
+}
+
+.homeCubeSkillsFace3{
+    transform:rotateY(-90deg) translate3d(0,0,150px);
+}
+
+.homeCubeSkillsFace4{
+    transform:rotateY(90deg) translate3d(0,0,150px);
+}
+
+.homeCubeSkillsFace5{
+    transform:rotateX(90deg) translate3d(0,0,150px);
+}
+
+.homeCubeSkillsFace6{
+    transform:rotateX(-90deg) translate3d(0,0,150px);
+}
+
+/* ........... making cuberotation animation here .......  */
+
+@keyframes cubeRotation {
+    to{
+        transform: rotateY(360deg) rotateX(480deg) rotateZ(720deg) ;
+    }
+}
+
+
+/* .....css for cubeshadow...  */
+
+.cubeShadow{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.171);
+    border-radius: 50%;
+    animation: cubeShadow 1s ease-in-out infinite alternate;
+    filter: blur(3px);
+}
+
+@keyframes cubeShadow {
+    to{
+        transform: scale(1.2) translateY(-10px);
+    }
+}
