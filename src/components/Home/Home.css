@@ -120,3 +120,87 @@
         transform: scale(1.2) translateY(-10px);
     }
 }
+
+
+
+
+
+
+/* ************** CSS for Icons**************  */
+
+.homeSkillBox{
+    background-color: hsl(250, 100%, 75%);
+    padding: 0 2vmax;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -300px;
+    /* animation: homeSkillBoxAnimationON 1s linear forwards; */
+    animation-duration: 1 s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+.homeSkillBox > svg{
+    font-size: 5vmax;
+    color: white;
+    transition: all 0.5s;
+    margin: 10px;
+}
+
+.homeSkillBox > svg:hover{
+    transform: scale(1.5);
+}
+
+
+@keyframes homeSkillBoxAnimationON {
+    from{
+        right: -300px;
+    }
+    to{
+        right: 40px;
+    }
+}
+
+@keyframes homeSkillBoxAnimationOFF {
+    from{
+        right: 40px;
+    }
+    to{
+        right: -300px;
+    }
+}
+
+
+
+
+
+
+
+/* ****************  CSS for Youtube Section ***************  */
+
+.homeYoutbe{
+    background-color: white;
+    padding-top: 4vmax;
+    transform: translateY(-200px);
+    border-radius: 20% 20% 0 0;
+    position: relative;
+    margin-bottom: -200px;
+    min-height: 1000px;
+}
+
+.homeYoutbe > h3{
+    text-align: center;
+    color: rgba(22,20,20,0.903);
+    padding: 4vmax;
+}
+
+.homeYoutbeWrapper{
+     display: flex;  
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 2vmax;
+     width: 80%;
+     margin: auto;
+}

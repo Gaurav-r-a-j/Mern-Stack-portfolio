@@ -8,6 +8,20 @@ import TimeLine from '../TimeLine/TimeLine';
 import moonImage from "../../images/moon.jpeg"
 import venusImage from "../../images/venus.jpeg"
 import spaceImage from "../../images/space.jpg"
+import{
+   SiCplusplus,
+   SiReact,
+   SiJavascript,
+   SiMongodb,
+   SiNodedotjs,
+   SiExpress,
+   SiCss3,
+   SiHtml5,
+   SiThreedotjs
+
+} from "react-icons/si";
+
+import YoutubeCard from '../YoutubeCard/YoutubeCard';
 
 
 const Home = () => {
@@ -152,6 +166,37 @@ const Home = () => {
                 </div>
 
                 <div className="cubeShadow"></div>
+
+                <div className="homeSkillBox">
+                <SiCplusplus/>
+                <SiReact/>
+                <SiJavascript/>
+                <SiMongodb/>
+                <SiNodedotjs/>
+                <SiExpress/>
+                <SiCss3/>
+                <SiHtml5/>
+                <SiThreedotjs/>
+                </div>
+            </div>
+
+            <div className="homeYoutbe">
+                <Typography variant='h3'>
+                    YOUTUBE VIDEOS
+                </Typography>
+
+                <div className="homeYoutbeWrapper">
+                    
+                    <YoutubeCard image="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"  title="Sample Video"/>
+
+                    <YoutubeCard image="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"  title="Sample Video"/>
+
+                    <YoutubeCard image="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"  title="Sample Video"/>
+
+                    <YoutubeCard image="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"  title="Sample Video"/>
+
+
+                </div>
             </div>
         </div>
     )
