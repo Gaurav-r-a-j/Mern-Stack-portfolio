@@ -8,6 +8,17 @@ import TimeLine from '../TimeLine/TimeLine';
 import moonImage from "../../images/moon.jpeg"
 import venusImage from "../../images/venus.jpeg"
 import spaceImage from "../../images/space.jpg"
+
+import htmlImage from "../../images/html.jpeg"
+import cssImage from "../../images/css.jpg"
+import bootStrapImgae from "../../images/bootstrap.png"
+import javaScriptImage from "../../images/javascript.jpg"
+import ReactImage from "../../images/react.jpeg"
+import phpImage from "../../images/php.jpeg"
+
+
+
+
 import{
    SiCplusplus,
    SiReact,
@@ -140,27 +151,27 @@ const Home = () => {
                 <Typography variant='h3'>SKILLS</Typography>
                 <div className="homeCubeSkills">
                     <div className="homeCubeSkillsFaces homeCubeSkillsFace1">
-                        <img src="https://images.unsplash.com/photo-1657925426569-ad97ff77fe4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+                        <img src={ReactImage} alt="" />
                     </div>
 
                     <div className="homeCubeSkillsFaces homeCubeSkillsFace2">
-                        <img src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="" />
+                        <img src={cssImage} alt="" />
                     </div>
 
                     <div className="homeCubeSkillsFaces homeCubeSkillsFace3">
-                        <img src="https://images.unsplash.com/photo-1652017659242-2714397b42f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" alt="" />
+                        <img src={htmlImage} alt="" />
                     </div>
 
                     <div className="homeCubeSkillsFaces homeCubeSkillsFace4">
-                        <img src="https://images.unsplash.com/photo-1656686628168-e534ae2c51d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1830&q=80" alt="" />
+                        <img src={javaScriptImage} alt="" />
                     </div>
 
                     <div className="homeCubeSkillsFaces homeCubeSkillsFace5">
-                        <img src="https://images.unsplash.com/photo-1656460990797-d8602507b5e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+                        <img src={bootStrapImgae} alt="" />
                     </div>
 
                     <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
-                        <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="" />
+                        <img src={phpImage} alt="" />
                     </div>
 
                 </div>
